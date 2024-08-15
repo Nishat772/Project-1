@@ -218,3 +218,8 @@ h5 {
 .page {
     margin-left: 40%;
 }
+
+.loader {
+    margin-top: 100px;
+    padding-left: 15%;
+}
