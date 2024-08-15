@@ -1,0 +1,220 @@
+body,
+html {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+:root {
+    --color1: #2c2f50;
+    --color2: #0ECA97;
+    --color3: #FF5821;
+    --color4: #6748CD;
+    --color5: #d31b96;
+}
+
+li {
+    list-style: none;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: #6748CD;
+    background: linear-gradient(135deg, #0ECA97 0%, #6748CD 100%);
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(315deg, #2c2f50 10%, #0ECA97 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-top i {
+    color: var(--color4);
+    font-size: 20px;
+}
+.header-top span, a {
+    color: var(--color1);
+    text-decoration: none;
+}
+.header-top a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: var(--color2) !important;
+    padding: 10px !important;
+}
+.navbar li a {
+    color: white;
+    font-size: 15px;
+}
+.navbar li a:hover {
+    color: var(--color1);
+}
+
+.navbar .dropdown-menu {
+    background-color: #45ffcd;
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
+    border: 0;
+    border-radius: 5px;
+    top: 90%;
+    left: -10px;
+    width: 100px;
+    height: 170px;
+    text-align: center;
+    display: block;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.navbar .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.navbar .dropdown-menu a {
+    color: var(--color1);
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+.navbar .dropdown-menu a:hover {
+    font-size: 16px;
+    color: var(--color3);
+}
+
+.text-animete span {
+    color: var(--color3);
+}
+.home-img {
+    width: 380px;
+    height: 360px;
+}
+
+.home-img .portfolio-circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2rem var(--color3);
+}
+
+.home-img .portfolio-circle::after{
+    content: '';
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-image: url(../assets/Nishat_pic.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+}
+
+.btn-box .btn {
+    width: 150px;
+    height: 55px;
+    background-color: var(--color2);
+    border: 1px solid white;
+}
+.btn-box .btn:hover {
+    border: 1px solid var(--color1);
+}
+.btn-box a {
+    color: var(--color1);
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.btn-box a:hover {
+    color: white;
+}
+
+.about {
+    margin-top: 100px;
+}
+.about .about-content {
+    margin-top: 50px;
+    padding-right: 50px;
+    text-align: justify;
+}
+.cv-btn {
+    width: 160px;
+    height: 55px;
+    background-color: var(--color4);
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.cv-btn:hover {
+    border: 1px solid var(--color1);
+    background-color: transparent;
+}
+.cv-btn a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 16px;
+}
+.cv-btn a:hover {
+    color: var(--color1);
+}
+
+.for_btn .btn{
+    color: black;
+    padding: 15px 50px;
+    border: 1px solid white;
+}
+.for_btn .btn:hover{
+    border: 1px solid black !important;
+    color: white !important;
+}
+
+.table-section {
+    margin-top: 150px !important;
+}
+
+.card-2 .card-body ul{
+    height: 150px;
+}
+.card-2 .card-body ul li i {
+    color: var(--color3);
+}
+
+.card-2 .icon {
+    font-size: 32px;
+    padding: 5px;
+}
+
+.card-2 .card-body .learn-more-btn {
+    text-align: center;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+.learn-more-btn .btn {
+    width: 120px;
+    height: 50px;
+    background-color: var(--color2);
+    border: 1px solid white;
+}
+.learn-more-btn .btn:hover {
+    border: 1px solid var(--color1);
+}
+.learn-more-btn a {
+    color: var(--color1);
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.learn-more-btn a:hover {
+    color: white;
+}
+
+.page {
+    margin-left: 40%;
+}
